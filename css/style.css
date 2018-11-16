@@ -17,7 +17,7 @@ html {
 body {
 	margin: 0px;
 	padding: 0px;
-	max-width: 1920px;
+	width: 100%;
 	margin: 0 auto;
 	font-family: "Myriad Pro", "Arial", sans-serif;
 	font-size: 16px;
@@ -40,8 +40,17 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-.header__video {
-	height: 750px;
+.header__img {
+  width: 100%;
+  height: auto;
+  max-height: 750px;
+}
+@media (min-width: 1460px) {
+  .header__img {
+    width: 1920px;
+    height: auto;
+    max-height: 750px;
+  }
 }
 .menu {
 	width: 1920px;
