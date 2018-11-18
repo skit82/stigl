@@ -41,7 +41,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           adaptiveHeight: true,
@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 520,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           adaptiveHeight: true,
@@ -114,7 +114,14 @@ $(document).ready(function() {
     else if($(this).scrollTop() <= -400 && $menu.hasClass('fix')) {
       $menu.removeClass('fix').addClass('normal');
     }
-  });  
+  });
+
+  $(document).on('click', '.header__play', function() {
+    var $video = $('#video'),
+      src = $video.attr('src');
+ 
+    $video.attr('src', src + '&autoplay=1');
+  }); 
 });
 
 

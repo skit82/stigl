@@ -12,9 +12,12 @@
 <body>
 	<header class="header">
 		<div class="header__video">
-			<video  class="header__img" poster="img/header-video.jpg" width="1920" height="750">
-			<source src="" type="video/mp4">
+			<video width="1920" controls  class="header__img" poster="img/header-video.jpg">
+			<source src="video/РОЛИК ГЛАВНАЯ ИСПРАВЛЕННЫЙ 30 сек.mp4">
 			</video>
+			<!-- <div class="header__play"> -->
+				<!-- <img src="img/icon-play.png" alt="Воспроизведение"> -->
+			<!-- </div> -->
 		</div>
 		<menu class="menu">
 			<div class="menu__wrapper">
@@ -28,7 +31,7 @@
 				<div class="menu__inner">
 					<div class="menu__logo">
 						<a href="">
-							<img src="img/logo.png" width="278" height="97" alt="Логотип">
+							<img class="menu__img" src="img/logo.png" width="278" height="97" alt="Логотип">
 						</a>
 					</div>
 					<ul class="menu__list">
@@ -89,27 +92,29 @@
 				New products
 			</h2>
 			<ul class="product__list">
-				<li class="product__item product__item--fon">
-					<img src="img/product_one.jpg" width="960" height="492" alt="Продукт" class="product__img">
-					<div class="product__block">
-						<h3 class="product__name">
-							ADAPTER SPOOL 21 1/4" 	spacerspool
-						</h3>
-						<p class="product__text">
-							Model: 21 1/4" spacerspool<br>
-							Place of origin: Shaanxi<br>
-							Applicati: Connection wellhead, manifold<br>
-							Material: AISI 4130<br>
-							Processing: Integral Forged<br>
-							Working pressure: 2000 psi<br>
-							End connection: API6A flange<br>
-							Length: As per request<br>
-							Color: Red or as per request
-						</p>
-						<button class="product__btn">
-							Read more
-						</button>	
+				<li class="product__item">
+					<div class="img product__item--fon">
+						<img src="img/product__one-one.png" width="960" height="492" alt="Продукт" class="product__img">
 					</div>
+					<!-- <div class="product__block"> -->
+						<!-- <h3 class="product__name"> -->
+							<!-- ADAPTER SPOOL 21 1/4" 	spacerspool -->
+						<!-- </h3> -->
+						<!-- <p class="product__text"> -->
+							<!-- Model: 21 1/4" spacerspool<br> -->
+							<!-- Place of origin: Shaanxi<br> -->
+							<!-- Applicati: Connection wellhead, manifold<br> -->
+							<!-- Material: AISI 4130<br> -->
+							<!-- Processing: Integral Forged<br> -->
+							<!-- Working pressure: 2000 psi<br> -->
+							<!-- End connection: API6A flange<br> -->
+							<!-- Length: As per request<br> -->
+							<!-- Color: Red or as per request -->
+						<!-- </p> -->
+						<!-- <button class="product__btn"> -->
+							<!-- Read more -->
+						<!-- </button>	 -->
+					<!-- </div> -->
 				</li>
 				<li class="product__item">
 					<img src="img/product_two.jpg" width="960" height="492" alt="Продукт" class="product__img">
@@ -117,27 +122,29 @@
 				<li class="product__item">
 					<img src="img/product_three.jpg" width="960" height="492" alt="Продукт" class="product__img">
 				</li>
-				<li class="product__item product__item--fon">
-					<img src="img/product_one.jpg" width="960" height="492" alt="Продукт" class="product__img">
-					<div class="product__block-one">
-						<h3 class="product__name">
-							ADAPTER SPOOL 21 1/4" 	spacerspool
-						</h3>
-						<p class="product__text">
-							Model: 21 1/4" spacerspool<br>
-							Place of origin: Shaanxi<br>
-							Applicati: Connection wellhead, manifold<br>
-							Material: AISI 4130<br>
-							Processing: Integral Forged<br>
-							Working pressure: 2000 psi<br>
-							End connection: API6A flange<br>
-							Length: As per request<br>
-							Color: Red or as per request
-						</p>
-						<button class="product__btn">
-							Read more
-						</button>	
+				<li class="product__item">
+					<div class="img product__item--fon">
+						<img src="img/product__fout-fout.png" width="960" height="492" alt="Продукт" class="product__img">
 					</div>
+					<!-- <div class="product__block-one"> -->
+						<!-- <h3 class="product__name"> -->
+							<!-- ADAPTER SPOOL 21 1/4" 	spacerspool -->
+						<!-- </h3> -->
+						<!-- <p class="product__text"> -->
+							<!-- Model: 21 1/4" spacerspool<br> -->
+							<!-- Place of origin: Shaanxi<br> -->
+							<!-- Applicati: Connection wellhead, manifold<br> -->
+							<!-- Material: AISI 4130<br> -->
+							<!-- Processing: Integral Forged<br> -->
+							<!-- Working pressure: 2000 psi<br> -->
+							<!-- End connection: API6A flange<br> -->
+							<!-- Length: As per request<br> -->
+							<!-- Color: Red or as per request -->
+						<!-- </p> -->
+						<!-- <button class="product__btn"> -->
+							<!-- Read more -->
+						<!-- </button>	 -->
+					<!-- </div> -->
 				</li>
 			</ul>
 		</section>
@@ -145,8 +152,8 @@
 			<h2 class="flashcard__title">
 				New products
 			</h2>
-			<ul class="flashcard__list">
-				<li class="flashcard__item">
+			<div class="flashcard__list">
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_1.png" width="314" height="211" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -163,8 +170,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-				<li class="flashcard__item">
+				</div>
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_2.png" width="314" height="212" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -181,8 +188,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-				<li class="flashcard__item">
+				</div>
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_3.png" width="314" height="213" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -199,8 +206,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-				<li class="flashcard__item">
+				</div>
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_1.png" width="314" height="211" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -217,8 +224,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-				<li class="flashcard__item">
+				</div>
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_2.png" width="314" height="212" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -235,8 +242,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-				<li class="flashcard__item">
+				</div>
+				<div class="flashcard__item">
 					<img class="flashcard__img" src="img/flashcard_3.png" width="314" height="213" alt="Товар">
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
@@ -253,8 +260,8 @@
 					<a class="flashcard__link" href="">
 						Join Auction NOW!
 					</a>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</section>
 		<section class="tender">
 				<div class="tender__block">
