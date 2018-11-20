@@ -12,8 +12,8 @@
 <body>
 	<header class="header">
 		<div class="header__video">
-			<video width="1920" controls  class="header__img" poster="img/header-video.jpg">
-			<source src="video/video-rolik.mp4">
+			<video controls="" width="100%" muted="muted" preload="auto" height="auto" loop="loop" autoplay="autoplay"   class="header__play">
+			<source src="video/video-rolik.mp4" type="video/mp4">
 			</video>
 			<!-- <div class="header__play"> -->
 				<!-- <img src="img/icon-play.png" alt="Воспроизведение"> -->
@@ -34,6 +34,29 @@
 							<img class="menu__img" src="img/logo.png" width="278" height="97" alt="Логотип">
 						</a>
 					</div>
+					<div class="header__mob header__mob--humburger">
+						<img src="img/humburger.png" width="20" height="18" class="header__mob-img" alt="Гамбургер">
+					</div>
+					<ul class="menu__list-mob">
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">Home</a>
+						</li>
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">Oil drilling services</a>
+						</li>
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">Equipment for sale and rent</a>
+						</li>
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">Auctions</a>
+						</li>
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">Auctions calendar</a>
+						</li>
+						<li class="menu__item-mob">
+							<a href="" class="menu__link-mob">News</a>
+						</li>
+					</ul>
 					<ul class="menu__list">
 						<li class="menu__item">
 							<a href="" class="menu__link">Home</a>
@@ -154,7 +177,9 @@
 			</h2>
 			<div class="flashcard__list">
 				<div class="flashcard__item">
-					<img class="flashcard__img" src="img/flashcard_1.png" width="314" height="211" alt="Товар">
+					<div>
+						<img class="flashcard__img" src="img/flashcard_1.png" width="314" height="211" alt="Товар">
+					</div>
 					<div class="flashcard__block">
 						<h3 class="flashcard__name">
 							ADAPTER SPOOL 21 1/4" 	spacerspool
