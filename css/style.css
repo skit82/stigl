@@ -48,10 +48,13 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 .header__video {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 550px;
   background-image: url(../img/header-video.jpg);
+  overflow-y: hidden;
+  z-index: 51;
 }
 .header__play {
   position: absolute;
@@ -61,6 +64,18 @@ input[type="radio"].visually-hidden {
   width: auto;
   height: auto;
   z-index: 50;
+}
+.header__scroll {
+  background-image: url(../img/down-arrows.png);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 5%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 300;
 }
 .menu {
 	max-width: 1920px;
@@ -91,6 +106,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   width: 100%;
+  height: 250px;
   margin: 0px;
   padding: 10px 20px;
   top: 144px;
@@ -103,8 +119,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 .menu__link-mob:hover {
-  color: #2d58b8;
-  border-bottom: 1px solid #9a9a9a;
+  color: #000;
 }
 .menu__link,
 .menu__link-mob {
@@ -174,8 +189,21 @@ input[type="radio"].visually-hidden {
   width: 200px;
   height: 72px;
 }
+.header__dowl {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 10px;
+  bottom: 30px;
+  background-image: url(../img/dowlnn.png);
+  z-index: 300;
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .header__mob {
+    display: none;
+  }
+  .header__mob--humburger {
     display: none;
   }
   .menu__list-mob {
@@ -572,11 +600,15 @@ input[type="radio"].visually-hidden {
 .footer__menu {
   max-width: 980px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 44px 0px;
+  padding: 20px 0px;
   margin: 0px auto;
   list-style: none;
+}
+.footer__item {
+  padding: 5px 20px;
 }
 .footer__item a {
   display: block;
@@ -750,6 +782,13 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 768px) {
+  .footer__menu {
+    flex-direction: row;
+    padding: 44px 0px;
+  }
+  .footer__item {
+    padding: 0px;
+  }
   .footer-list__link {
     font-size: 16px;
     line-height: 30px;

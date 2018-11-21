@@ -6,7 +6,7 @@ $(document).ready(function() {
           $(this).removeAttr('style')
           };
       });
-    })
+    });
 
     $('.spoiler__link').click(function(){ 
       $(this).parent().children('div.spoiler__content').toggle('fast');
@@ -116,11 +116,8 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('click', '.header__play', function() {
-    var $video = $('#video'),
-      src = $video.attr('src');
- 
-    $video.attr('src', src + '&autoplay=1');
+  $(function(){
+  $('.clikblock').click(function(){$('html,body').animate({scrollTop:$('.stopblock').offset().top}, 1200);});
   }); 
 });
 
