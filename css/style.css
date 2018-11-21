@@ -48,15 +48,17 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 .header__video {
-  position: relative;
-  display: block;
-  max-width: 1920px;
-  width: 100%;
-  min-height: 550px;
-  margin: 0 auto;
-  background-image: url(../img/header-video.jpg);
-  overflow-y: hidden;
-  z-index: 51;
+ position: relative;
+    display: block;
+    max-width: 1920px;
+    width: 100%;
+  
+    margin: 0 auto;
+    background-image: url(../img/header-video.jpg);
+  
+    z-index: 51;
+    min-height: 170px;
+    overflow-y: hidden;
 }
 .header__play {
   position: absolute;
@@ -216,7 +218,16 @@ input[type="radio"].visually-hidden {
     display: block;
   }
   .header__video {
-    height: 750px;
+    position: relative;
+    display: block;
+    max-width: 1920px;
+    width: 100%;
+  
+    margin: 0 auto;
+    background-image: url(../img/header-video.jpg);
+  
+    z-index: 51;
+    min-height: 350px;
     overflow-y: hidden;
   }
   .menu__img {
@@ -254,6 +265,9 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1024px) {
+  .header__video {
+    min-height: 550px;
+  }
   .menu__list {
     margin-left: 50px;
   }
@@ -262,6 +276,11 @@ input[type="radio"].visually-hidden {
   }
   .tongue {
     margin-right: 0px;
+  }
+}
+@media (min-width: 1284px) {
+  .header__video {
+    min-height: 750px;
   }
 }
 .banner__list {
