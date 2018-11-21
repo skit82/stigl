@@ -50,8 +50,10 @@ input[type="radio"].visually-hidden {
 .header__video {
   position: relative;
   display: block;
+  max-width: 1920px;
   width: 100%;
   min-height: 550px;
+  margin: 0 auto;
   background-image: url(../img/header-video.jpg);
   overflow-y: hidden;
   z-index: 51;
@@ -61,6 +63,7 @@ input[type="radio"].visually-hidden {
   top: 0px;
   min-width: 100%;
   min-height: 100%;
+  margin: 0 auto;
   width: auto;
   height: auto;
   z-index: 50;
@@ -213,7 +216,7 @@ input[type="radio"].visually-hidden {
     display: block;
   }
   .header__video {
-    min-width: 750px;
+    height: 750px;
     overflow-y: hidden;
   }
   .menu__img {
